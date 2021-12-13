@@ -1,4 +1,4 @@
-# Uni Localization demo for Vue.js 3.x
+# Uni Localization example for Vue.js 3.x
 
 Check out demo [here](https://uiwebkit.github.io/localize-vue-3x/)
 
