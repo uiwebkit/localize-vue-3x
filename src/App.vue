@@ -1,11 +1,11 @@
 <template>
-  <!-- Remove if language routing is not required -->
-  <uni-router shadow></uni-router>
+  <!-- Remove uni-router if language routing is not required -->
+  <uni-router shadow/>
 
   <uni-translate>Choose the option that suits you best:</uni-translate>
 
   <div>
-    <uni-lang-menu-shadow mini round routing list="lang-menu.json"></uni-lang-menu-shadow>
+    <uni-lang-menu-shadow mini round routing list="lang-menu.json"/>
     (Web Component) |
     <span><UniLangMenuCustom/>(Next Gen custom)</span>
   </div>
