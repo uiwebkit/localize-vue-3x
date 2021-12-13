@@ -1,15 +1,31 @@
 <template>
+  <!-- Remove if language routing is not required -->
+  <uni-router shadow></uni-router>
+
+  <uni-translate>Choose the option that suits you best:</uni-translate>
+
+  <div>
+    <uni-lang-menu-shadow mini round routing list="lang-menu.json"></uni-lang-menu-shadow>
+    (Web Component) |
+    <span><UniLangMenuCustom/>(Next Gen custom)</span>
+  </div>
+
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+
+  <uni-translate>
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  </uni-translate>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from '@/components/HelloWorld.vue';
+import UniLangMenuCustom from '@/components/UniLangMenuCustom.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    HelloWorld,
+    UniLangMenuCustom
   }
 }
 </script>
